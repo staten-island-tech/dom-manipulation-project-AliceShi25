@@ -1,0 +1,44 @@
+*,html,body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 62.5%;
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+
+body{
+    height: 100vw;
+    background-color: white;
+}
+
+#parent{
+    background-color: lavender;
+    padding: 30px 30px;
+    width: 50vw;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 2rem;
+    border: 0.5rem solid black;
+}
+
+.text{
+    color: black;
+    text-align: center;
+    font-size: 4rem;
+    margin-top: -2rem;
+ }
+
+
+.button{
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+.inputdiv{
+    font-size: 2.5rem;
+
+}
+
+
+ 

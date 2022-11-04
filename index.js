@@ -1,30 +1,36 @@
 const DOMSelectors = {
-  button: document.getElementById("btn"),
-  text: document.querySelector("#text"),
-  point: document.querySelector(".point"),
-  divbox: document.getElementById("bkg"),
+  parent: document.getElementById("parent"),
+  inputdiv: document.querySelector(".inputdiv"),
+  input: document.querySelector(".input"),
+  button: document.querySelector(".button"),
+  text: document.querySelector(".text"),
 };
 
-function backgroundText(background, text) {
-  background.style.backgroundColor = "blue";
-  text.textContent = "ew";
-  text.style.fontSize = "40px";
+function colorChange(parent, text) {
+  parent.style.backgroundColor = "red";
+  text.style.color = "white";
 }
 DOMSelectors.button.addEventListener("click", function () {
-  backgroundText(DOMSelectors.divbox, DOMSelectors.text);
-});
-//when click button, function in bkgtxt happens
-/*/ nodelist
-const qsa = (els) => document.querySelectorAll(els);
-const allPoint = qsa(".point");
-console.log(allPoint);
-
-const allPointArray = Array.from(allPoint);
-const oPoint = allPointArray.filter((node) => {
-  if (node.classList[1] === "one") {
-    return true;
-  }
-  return false;
+  colorChange(DOMSelectors.parent, DOMSelectors.text);
+  let input = DOMSelectors.input.value;
+  console.log(input);
+  DOMSelectors.button.insertAdjacentHTML("afterend", `${input}`);
 });
 
-console.log(oPoint);/*/
+// DOMSelectors.button.insertAdjacentHTML("afterend", `<h1>"hi"</h1>`);
+
+// when click button, function in bkgtxt happens
+// nodelist
+// const qsa = (els) => document.querySelectorAll(els);
+// const allPoint = qsa(".point");
+// console.log(allPoint);
+
+// const allPointArray = Array.from(allPoint);
+// const oPoint = allPointArray.filter((node) => {
+//   if (node.classList[1] === "one") {
+//     return true;
+//   }
+//   return false;
+// });
+
+// console.log(oPoint);
