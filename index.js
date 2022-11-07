@@ -1,21 +1,28 @@
 const DOMSelectors = {
   parent: document.getElementById("parent"),
-  inputdiv: document.querySelector(".inputdiv"),
-  input: document.querySelector(".input"),
-  button: document.querySelector(".button"),
+  input: document.getElementById("input"),
+  button: document.getElementById("btn"),
+  button2: document.getElementById("btn2"),
   text: document.querySelector(".text"),
 };
 
-function colorChange(parent, text) {
-  parent.style.backgroundColor = "red";
-  text.style.color = "white";
-}
+// function colorChange(parent, text) {
+//   parent.style.backgroundColor = "red";
+//   text.style.color = "white";
+// }
+
 DOMSelectors.button.addEventListener("click", function () {
-  colorChange(DOMSelectors.parent, DOMSelectors.text);
   let input = DOMSelectors.input.value;
   console.log(input);
-  DOMSelectors.button.insertAdjacentHTML("afterend", `${input}`);
+  DOMSelectors.button.insertAdjacentHTML("afterend", `<p>${input}</p>`);
+  DOMSelectors.input.value = "";
 });
+
+// DOMSelectors.button2.addEventListener("click", function () {
+//   let input = DOMSelectors.text.value;
+//   console.log(input);
+//   DOMSelectors.text.value = "";
+// });
 
 // DOMSelectors.button.insertAdjacentHTML("afterend", `<h1>"hi"</h1>`);
 

@@ -14,31 +14,27 @@ body{
 #parent{
     background-color: lavender;
     padding: 30px 30px;
-    width: 50vw;
     position: absolute;
     transform: translate(-50%,-50%);
     top: 50%;
     left: 50%;
     border-radius: 2rem;
-    border: 0.5rem solid black;
-}
-
-.text{
-    color: black;
+    border: 0.25rem solid lightgoldenrodyellow;
+    font-size: 2rem;
     text-align: center;
-    font-size: 4rem;
-    margin-top: -2rem;
+} 
+
+#text{
+    color: black;
+    font-size: 2rem;
  }
 
 
-.button{
-    font-size: 1rem;
+#btn, #btn2{
+    font-size: 1.2rem;
     margin-top: 0.5rem;
 }
-.inputdiv{
-    font-size: 2.5rem;
 
-}
 
 
  
