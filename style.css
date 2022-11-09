@@ -24,9 +24,10 @@ body{
     text-align: center;
 } 
 
-#text{
+.inputs{
     color: black;
     font-size: 2rem;
+    flex-direction: column;
  }
 
 

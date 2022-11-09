@@ -9,7 +9,20 @@
   <body>
     <div id="parent">
       <p class="text">Input</p>
-      <input type="text" id="input" />
+      <div class="inputs">
+        <input type="text" id="input" />
+        <input type="text" id="input2" />
+        <!-- <label for="url">Enter an https:// URL:</label> -->
+        <input
+          type="url"
+          name="url"
+          id="url"
+          placeholder="https://example.com"
+          pattern="https://.*"
+          size="30"
+          required
+        />
+      </div>
       <button type="button" id="btn">Enter</button>
       <button type="button" id="btn2">Clear</button>
     </div>
