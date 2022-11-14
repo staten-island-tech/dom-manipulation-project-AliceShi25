@@ -7,25 +7,32 @@
     <title>Document</title>
   </head>
   <body>
-    <div id="parent">
-      <p class="text">Input</p>
-      <div class="inputs">
-        <input type="text" id="input" />
-        <input type="text" id="input2" />
-        <!-- <label for="url">Enter an https:// URL:</label> -->
-        <input
-          type="url"
-          name="url"
-          id="url"
-          placeholder="https://example.com"
-          pattern="https://.*"
-          size="30"
-          required
-        />
-      </div>
-      <button type="button" id="btn">Enter</button>
-      <button type="button" id="btn2">Clear</button>
+    
+  <h1>text</h1>
+    
+<div id="parent">
+  <div class="inputs">
+    <div class="input">
+      <label for="input1">Text</label>
+      <input type="text" id="input1" class="inputbox" required/>
     </div>
+
+    <div class="input">
+      <label for="input2">Text2</label>
+      <input type="text" id="input2" class="inputbox" required/>
+    </div>
+
+    <div class="input">
+      <label for="url">URL</label>
+      <input type="text" id="url" class="inputbox" required/>
+    </div>
+  </div>
+
+
+  <div class="button">
+      <button type="button" id="btn">Enter</button>
+  </div>
+</div>
     <script src="index.js"></script>
   </body>
 </html>

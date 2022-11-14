@@ -9,6 +9,7 @@
 body{
     height: 100vw;
     background-color: white;
+    text-align: center;
 }
 
 #parent{
@@ -21,7 +22,6 @@ body{
     border-radius: 2rem;
     border: 0.25rem solid lightgoldenrodyellow;
     font-size: 2rem;
-    text-align: center;
 } 
 
 .inputs{
@@ -31,7 +31,7 @@ body{
  }
 
 
-#btn, #btn2{
+#btn{
     font-size: 1.2rem;
     margin-top: 0.5rem;
 }

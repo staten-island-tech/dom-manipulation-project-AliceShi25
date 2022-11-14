@@ -1,12 +1,12 @@
 const DOMSelectors = {
   parent: document.getElementById("parent"),
-  input: document.getElementById("input"),
+  inputs: document.querySelector(".inputs"),
+  input: document.querySelector(".input"),
+  inputbox: document.querySelector(".inputbox"),
+  input1: document.getElementById("input1"),
   input2: document.getElementById("input2"),
   url: document.getElementById("url"),
-  inputs: document.querySelector(".inputs"),
   button: document.getElementById("btn"),
-  button2: document.getElementById("btn2"),
-  text: document.querySelector(".text"),
 };
 
 // function colorChange(parent, text) {
@@ -15,15 +15,9 @@ const DOMSelectors = {
 // }
 
 DOMSelectors.button.addEventListener("click", function () {
-  let input = DOMSelectors.input.value;
-  DOMSelectors.button.insertAdjacentHTML("afterend", `<p>${input}</p>`);
-  DOMSelectors.input.value = "";
-  let input2 = DOMSelectors.input2.value;
-  DOMSelectors.button.insertAdjacentHTML("afterend", `<p>${input2}</p>`);
-  DOMSelectors.input2.value = "";
-  let url = DOMSelectors.url.value;
-  DOMSelectors.button.insertAdjacentHTML("afterend", `<p>${url}</p>`);
-  DOMSelectors.url.value = "";
+  let input1 = DOMSelectors.input1.value;
+  DOMSelectors.button.insertAdjacentHTML("afterend", `<p>${input1}</p>`);
+  DOMSelectors.input1.value = "";
 });
 
 // DOMSelectors.button2.addEventListener("click", function () {
