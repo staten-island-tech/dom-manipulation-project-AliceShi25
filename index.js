@@ -1,6 +1,5 @@
 const DOMSelectors = {
   parent: document.getElementById("parent"),
-  // inputs: document.querySelector(".inputs"),
   inputs: document.querySelector(".inputs"),
   inputbox: document.querySelector(".inputbox"),
   input1: document.getElementById("input1"),
@@ -15,7 +14,7 @@ DOMSelectors.button.addEventListener("click", function () {
   let url = DOMSelectors.url.value;
   DOMSelectors.button.insertAdjacentHTML(
     "afterend",
-    `<div id="coard"><p>${input1} ${input2} ${url} </p></div>`
+    `<div id="coard"><p>${input1}</p> <p>${input2}</p> <p><img src="${url}" alt="image"> </p> <button class ="remove">Clear</button> </div>`
   );
   DOMSelectors.input1.value = "";
   DOMSelectors.input2.value = "";
