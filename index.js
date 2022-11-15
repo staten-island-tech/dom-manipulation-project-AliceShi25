@@ -15,7 +15,7 @@ DOMSelectors.button.addEventListener("click", function () {
   let url = DOMSelectors.url.value;
   DOMSelectors.button.insertAdjacentHTML(
     "afterend",
-    `<div id="die"><p>${input1} ${input2} ${url} </p></div>`
+    `<div id="coard"><p>${input1} ${input2} ${url} </p></div>`
   );
   DOMSelectors.input1.value = "";
   DOMSelectors.input2.value = "";

@@ -13,15 +13,7 @@ body{
 }
 
 #parent{
-    background-color: lavender;
-    padding: 30px 30px;
-    position: absolute;
-    transform: translate(-50%,-50%);
-    top: 50%;
-    left: 50%;
-    border-radius: 2rem;
-    border: 0.25rem solid lightgoldenrodyellow;
-    font-size: 2rem;
+    
 } 
 
 .inputs{
@@ -35,9 +27,16 @@ body{
     font-size: 1.2rem;
     margin-top: 0.5rem;
 }
-#die{
-    text-align: center;
-    align-content: center;
+#coard{
+    background-color: lavender;
+    padding: 30px 30px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 2rem;
+    border: 0.25rem solid lightgoldenrodyellow;
+    font-size: 2rem;
 }
 
 
