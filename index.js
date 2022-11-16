@@ -14,9 +14,12 @@ DOMSelectors.button.addEventListener("click", function () {
   let url = DOMSelectors.url.value;
   DOMSelectors.button.insertAdjacentHTML(
     "afterend",
-    `<div id="coard"><p>${input1}</p> <p>${input2}</p> <p><img src="${url}" alt="image"> </p> <button class ="remove">Clear</button> </div>`
+    `<div id="coard"> <p>From: ${input1}</p> <p><img src="${url}" alt="image"> </p> <p>${input2}</p> <button onclick="removeCaard(this.parentNode)">Clear</button> </div>`
   );
   DOMSelectors.input1.value = "";
   DOMSelectors.input2.value = "";
   DOMSelectors.url.value = "";
 });
+function removeCaard(image) {
+  image.remove();
+}
