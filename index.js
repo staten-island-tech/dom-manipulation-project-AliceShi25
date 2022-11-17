@@ -14,7 +14,11 @@ DOMSelectors.button.addEventListener("click", function () {
   let url = DOMSelectors.url.value;
   DOMSelectors.button.insertAdjacentHTML(
     "afterend",
-    `<div id="coard"> <p class="cardName>From: ${name}</p> <p class="cardImage><img src="${url}" alt="image"> </p> <p class="cardMessage">${message}</p> <button class="cleary">Clear</button> </div>`
+    `<div id="coard"> 
+    <p class="cardName>From: ${name}</p> 
+    <p class="cardImage><img src="${url}" alt="image"> </p> 
+    <p class="cardMessage">${message}</p> 
+    <button class="cleary">Clear</button> </div>`
   );
   DOMSelectors.name.value = "";
   DOMSelectors.message.value = "";
