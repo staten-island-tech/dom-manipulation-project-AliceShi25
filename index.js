@@ -2,24 +2,21 @@ const DOMSelectors = {
   parent: document.getElementById("parent"),
   inputs: document.querySelector(".inputs"),
   inputbox: document.querySelector(".inputbox"),
-  input1: document.getElementById("input1"),
-  input2: document.getElementById("input2"),
+  name: document.getElementById("name"),
+  message: document.getElementById("message"),
   url: document.getElementById("url"),
   button: document.getElementById("btn"),
 };
 
 DOMSelectors.button.addEventListener("click", function () {
-  let input1 = DOMSelectors.input1.value;
-  let input2 = DOMSelectors.input2.value;
+  let name = DOMSelectors.name.value;
+  let message = DOMSelectors.message.value;
   let url = DOMSelectors.url.value;
   DOMSelectors.button.insertAdjacentHTML(
     "afterend",
-    `<div id="coard"> <p>From: ${input1}</p> <p><img src="${url}" alt="image"> </p> <p>${input2}</p> <button onclick="removeCaard(this.parentNode)">Clear</button> </div>`
+    `<div id="coard"> <p class="cardName>From: ${name}</p> <p class="cardImage><img src="${url}" alt="image"> </p> <p class="cardMessage">${message}</p> <button class="cleary">Clear</button> </div>`
   );
-  DOMSelectors.input1.value = "";
-  DOMSelectors.input2.value = "";
+  DOMSelectors.name.value = "";
+  DOMSelectors.message.value = "";
   DOMSelectors.url.value = "";
 });
-function removeCaard(image) {
-  image.remove();
-}
