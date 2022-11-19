@@ -4,42 +4,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Holiday Card</title>
-  </head>
-
+    <title>Holiday Card Creator</title>
+</head>
   <body>
-<div id="parent">
+    <div id="parent">
       <h1>Make a Holiday Card ;)</h1>
-<section class="formparent">
-  <div id="form">
-      <div class="inputs">
-        <p class="text"><label for="name">Name</label></p>
-        <input type="text" id="name" class="inputbox" required />
+  <section class="formparent">
+    <form id="form">
+      <div class="form-inputs">
+        <div class="inputs">
+          <p class="text"><label for="name">Name</label></p>
+          <input type="text" id="name" class="textbox" required>
+        </div>
+        <div class="inputs">
+          <p class="text"><label for="Message">Message</label></p>
+          <input type="text" id="message" class="textbox" required>
+        </div>
+        <div class="inputs">
+          <p class="text"><label for="img">Image</label></p>
+          <input type="text" id="img" class="textbox" placeholder="https://abc.com" required>
+        </div>
       </div>
-
-      <div class="inputs">
-        <p class="text"><label for="message">Message</label></p>
-        <input type="text" id="message" class="inputbox" required />
-      </div>
-
-      <div class="inputs">
-        <p class="text"><label for="url">Image(URL)</label></p>
-        <input
-          type="text"
-          id="url"
-          class="inputbox"
-          placeholder="https://abc.com"
-          required
-        />
-      </div>
+      <div class="thisButton">
+          <input type="submit" value="Enter" class="btn">
+          </div>
+      </form>
     </div>
-      <div class="button">
-        <input type="submit" value="Submit" class="btn">
-      </div>
-    </form>
-    </section>
-    <section class="display" id="display"></section>
-  </div>
+  </section>
+  <section class="display" id="display">
+  </section>
     <script src="index.js"></script>
   </body>
 </html>
