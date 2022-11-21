@@ -11,29 +11,28 @@ const DOMSelectors = {
   clear: document.querySelectorAll(".clear"),
 };
 
-DOMSelectors.form.addEventListener("submit", function (addCard) {
-  addCard.preventDefault();
+function create() {
   let card = {};
   card.name = DOMSelectors.name.value;
   card.img = DOMSelectors.img.value;
   card.message = DOMSelectors.message.value;
-  type();
-  clear();
-  function type() {
-    DOMSelectors.button.insertAdjacentHTML(
-      `afterend`,
-      `<div class="coard">
+  DOMSelectors.button.insertAdjacentHTML(
+    `afterend`,
+    `<div class="coard">
       <p>From: ${card.name}</p>
       <p><img src= "${card.img}"/></p>
       <p>${card.message}</p>
        <button class="clear">Clear</button>
   </div>`
-    );
-    DOMSelectors.name.value = "";
-    DOMSelectors.img.value = "";
-    DOMSelectors.message.value = "";
-  }
-});
+  );
+}
+
+function none() {
+  DOMSelectors.name.value = "";
+  DOMSelectors.img.value = "";
+  DOMSelectors.message.value = "";
+}
+
 function clear() {
   let clear = document.querySelectorAll(".clear");
   clear.forEach((node) => {
@@ -42,3 +41,10 @@ function clear() {
     });
   });
 }
+
+DOMSelectors.form.addEventListener("submit", function (addCard) {
+  addCard.preventDefault();
+  create();
+  none();
+  clear();
+});
