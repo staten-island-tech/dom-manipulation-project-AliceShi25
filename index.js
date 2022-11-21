@@ -1,7 +1,5 @@
 const DOMSelectors = {
-  formparent: document.querySelector(".formparent"),
   form: document.getElementById("form"),
-  forminputs: document.querySelector(".form-inputs"),
   inputs: document.querySelector(".inputs"),
   text: document.querySelector(".text"),
   textbox: document.querySelector(".textbox"),
@@ -13,8 +11,8 @@ const DOMSelectors = {
   clear: document.querySelectorAll(".clear"),
 };
 
-DOMSelectors.form.addEventListener("submit", function (a) {
-  a.preventDefault();
+DOMSelectors.form.addEventListener("submit", function (addCard) {
+  addCard.preventDefault();
   let card = {};
   card.name = DOMSelectors.name.value;
   card.img = DOMSelectors.img.value;
@@ -35,12 +33,12 @@ DOMSelectors.form.addEventListener("submit", function (a) {
     DOMSelectors.img.value = "";
     DOMSelectors.message.value = "";
   }
-  function clear() {
-    let clear = document.querySelectorAll(".clear");
-    clear.forEach((node) => {
-      node.addEventListener("click", function (a) {
-        a.target.parentElement.remove();
-      });
-    });
-  }
 });
+function clear() {
+  let clear = document.querySelectorAll(".clear");
+  clear.forEach((node) => {
+    node.addEventListener("click", function (addCard) {
+      addCard.target.parentElement.remove();
+    });
+  });
+}
